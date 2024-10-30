@@ -19,4 +19,5 @@ source "$USERSH/bashrc"
 
 clear
 
-echo "$(whoami) at $(hostname)  $(date "+%T %F")"
+echo "User $(whoami) at $(hostname)   $(date "+%T %F")"
+echo ""
