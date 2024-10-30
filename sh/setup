@@ -2,7 +2,7 @@
 export BASHDIR="$HOME/.bash"
 export USERSH="$BASHDIR/.usersh"
 
-git "$GIT_URL" "$BASHDIR"
+git clone "https://github.com/grunwmar/bash-environment.git" "$BASHDIR"
 
 if ! [[ -f "$BASHDIR/bashrc" ]]; then
   echo "$BASHDIR/bashrc not found."
