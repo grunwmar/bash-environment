@@ -2,6 +2,10 @@
 export BASHDIR="$HOME/.bash"
 export USERSH="$BASHDIR/.usersh"
 
+if [[ -d "$BASHDIR" ]]; then
+  rm -rf "$BASHDIR"
+fi
+
 git clone "https://github.com/grunwmar/bash-environment.git" "$BASHDIR"
 
 if ! [[ -f "$BASHDIR/bashrc" ]]; then
