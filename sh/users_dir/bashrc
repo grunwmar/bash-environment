@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "<$(date)>"
 
-set_prompt prompt0
+set_prompt "prompt0"
