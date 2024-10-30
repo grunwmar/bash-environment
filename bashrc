@@ -1,7 +1,7 @@
 #!/bin/bash
 export BASHDIR="$HOME/.local/bash"
 export USERSH="$HOME/.usersh"
-export HISTFILE="$HOME/.bash_history"
+export HISTFILE="$USERSH/.bash_history"
 export HISTFILESIZE=10000
 
 shopt -s histappend
