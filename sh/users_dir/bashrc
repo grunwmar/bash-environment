@@ -1,3 +1,3 @@
 #!/bin/bash
-date
+echo $SHELL $(hostname) $(date)
 set_prompt "prompt0"
