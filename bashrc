@@ -2,7 +2,7 @@
 export BASHDIR="$HOME/.local/bash"
 export USERSH="$HOME/.usersh"
 
-if [[ -d "$USERSH/bash_history" ]]; then
+if [[ -d "$USERSH" ]]; then
   export HISTFILE="$USERSH/bash_history"
 else
   export HISTFILE="$HOME/.bash_history"
