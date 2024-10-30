@@ -11,7 +11,7 @@ fi
 
 # cleaning
 if ! [[ -d "$USERSH" ]]; then
-  cp -r "$BASHDIR/sh/users_dir/*" "$USERSH/"
+  cp -a "$BASHDIR/sh/users_dir/." "$USERSH/"
 fi
 
 if [[ -f "$HOME/.bashrc" ]]; then
