@@ -9,6 +9,7 @@ if ! [[ -f "$BASHDIR/bashrc" ]]; then
   exit
 fi
 
+# cleaning
 if ! [[ -d "$USERSH" ]]; then
   cp -r "$BASHDIR/sh/users_dir/*" "$USERSH/"
 fi
@@ -25,6 +26,7 @@ if [[ -f "$HOME/.logout" ]]; then
   rm "$HOME/.logout"
 fi
 
+# symlinks
 ln -s "$BASHDIR/bashrc" "$HOME/.bashrc"
 ln -s "$BASHDIR/login" "$HOME/.login"
 ln -s "$BASHDIR/logout" "$HOME/.logout"
