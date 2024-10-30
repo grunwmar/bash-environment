@@ -1,3 +1,2 @@
 #!/bin/bash
-echo [$SHELL]
 set_prompt "prompt0"
