@@ -1,5 +1,5 @@
 #!/bin/bash
-alias ..="cd .."
+alias ..="cd $HOME"
 alias ls="ls --color=yes"
 alias la="ls -A"
 alias ll="ls -lAh"
