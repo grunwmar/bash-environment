@@ -1,0 +1,35 @@
+#!/bin/bash
+export BASHDIR="$HOME/.bash"
+export USERSH="$BASHDIR/.usersh"
+
+git "$GIT_URL" "$BASHDIR"
+
+if ! [[ -f "$BASHDIR/bashrc" ]]; then
+  echo "$BASHDIR/bashrc not found."
+  exit
+fi
+
+if ! [[ -d "$USERSH" ]]; then
+  cp -r "$BASHDIR/sh/users_dir/*" "$USERSH/"
+fi
+
+if [[ -f "$HOME/.bashrc" ]]; then
+  rm "$HOME/.bashrc"
+fi
+
+if [[ -f "$HOME/.login" ]]; then
+  rm "$HOME/.login"
+fi
+
+if [[ -f "$HOME/.logout" ]]; then
+  rm "$HOME/.logout"
+fi
+
+ln -s "$BASHDIR/bashrc" "$HOME/.bashrc"
+ln -s "$BASHDIR/login" "$HOME/.login"
+ln -s "$BASHDIR/logout" "$HOME/.logout"
+
+if [[ -f "$USERSH/profile" ]]; then
+  ln -s "$USERSH/profile" "$HOME/.profile"
+fi
+
