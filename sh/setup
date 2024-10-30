@@ -30,12 +30,14 @@ if [[ -f "$HOME/.bash_logout" ]]; then
   rm "$HOME/.bash_logout"
 fi
 
+if [[ -f "$HOME/.bash_profile" ]]; then
+  rm "$HOME/.bash_profile"
+fi
+
 # symlinks
 ln -s "$BASHDIR/bashrc" "$HOME/.bashrc"
-ln -s "$BASHDIR/login" "$HOME/.bash_login"
+ln -s "$BASHDIR/login"  "$HOME/.bash_login"
 ln -s "$BASHDIR/logout" "$HOME/.bash_logout"
+ln -s "$USERSH/profile" "$HOME/.bash_profile"
 
-if [[ -f "$USERSH/profile" ]]; then
-  ln -s "$USERSH/profile" "$HOME/.bash_profile"
-fi
 
