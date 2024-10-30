@@ -22,20 +22,20 @@ if [[ -f "$HOME/.bashrc" ]]; then
   rm "$HOME/.bashrc"
 fi
 
-if [[ -f "$HOME/.login" ]]; then
-  rm "$HOME/.login"
+if [[ -f "$HOME/.bash_login" ]]; then
+  rm "$HOME/.bash_login"
 fi
 
-if [[ -f "$HOME/.logout" ]]; then
-  rm "$HOME/.logout"
+if [[ -f "$HOME/.bash_logout" ]]; then
+  rm "$HOME/.bash_logout"
 fi
 
 # symlinks
 ln -s "$BASHDIR/bashrc" "$HOME/.bashrc"
-ln -s "$BASHDIR/login" "$HOME/.login"
-ln -s "$BASHDIR/logout" "$HOME/.logout"
+ln -s "$BASHDIR/login" "$HOME/.bash_login"
+ln -s "$BASHDIR/logout" "$HOME/.bash_logout"
 
 if [[ -f "$USERSH/profile" ]]; then
-  ln -s "$USERSH/profile" "$HOME/.profile"
+  ln -s "$USERSH/profile" "$HOME/.bash_profile"
 fi
 
