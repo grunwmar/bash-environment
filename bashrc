@@ -16,3 +16,7 @@ export PROMPT_COMMAND="history -a"
 source "$BASHDIR/aliases"
 source "$BASHDIR/functions"
 source "$USERSH/bashrc"
+
+clear
+
+echo "$(whoami) at $(hostname)  $(date "+%T %F")"
