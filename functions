@@ -1,0 +1,5 @@
+#!/bin/bash
+
+function set_prompt () {
+    source "$USERSH/prompts/$1"
+}
