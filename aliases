@@ -1,6 +1,7 @@
 #!/bin/bash
 
 alias ..="cd .."
+alias _="cd -"
 alias ls="ls --color=yes"
 alias la="ls -A"
 alias ll="ls -lAh"
