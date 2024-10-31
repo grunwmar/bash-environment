@@ -10,3 +10,32 @@ alias @bashrc="ed $USERSH/bashrc"
 alias @aliases="ed $USERSH/aliases"
 
 alias :local="$HOME/.local"
+
+# activate python virtual environment
+function vn () {
+	if [[ -f "$1/bin/activate" ]]; then
+		source "$1/bin/activate"
+	fi
+}
+
+function pcoff() {
+    echo -n "Turn off the computer? [y/N] "
+    read ANSW
+    if [[  $ANSW = "y" ]]; then
+      shutdown now
+    fi
+}
+
+function sysupdate() {
+    sudo dnf upgrade
+}
+
+function refresh-usersh-directory() {
+    echo "All data inside will be lost and replaced by default content."
+    echo -n "Refresh the .usersh directory? [y/N] "
+    read ANSW
+    if [[  $ANSW = "y" ]]; then
+      rm -rf "$USERSH"
+      cp -a "$BASHDIR/sh/user_dir/." "$USERSH/"
+    fi
+}
