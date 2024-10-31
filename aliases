@@ -1,4 +1,5 @@
 #!/bin/bash
+
 alias ..="cd .."
 alias ls="ls --color=yes"
 alias la="ls -A"
@@ -8,7 +9,7 @@ alias ed="$EDITOR"
 
 alias @bashrc="ed $USERSH/bashrc"
 alias @aliases="ed $USERSH/aliases"
-
+alias :usersh="cd $USERSH"
 alias :local="$HOME/.local"
 
 # activate python virtual environment

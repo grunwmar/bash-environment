@@ -1,3 +1,4 @@
 #!/bin/bash
+
 set_prompt "prompt0"
 date "+%T [%Y %B %d]"

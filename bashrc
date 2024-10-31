@@ -1,4 +1,5 @@
 #!/bin/bash
+
 export BASHDIR="$HOME/.local/bash"
 export USERSH="$HOME/.usersh"
 
