@@ -4,3 +4,9 @@ alias ls="ls --color=yes"
 alias la="ls -A"
 alias ll="ls -lAh"
 alias l="ls -lh"
+alias ed="$EDITOR"
+
+alias @bashrc="ed $USERSH/bashrc"
+alias @aliases="ed $USERSH/aliases"
+
+alias :local="$HOME/.local"
