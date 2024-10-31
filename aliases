@@ -39,3 +39,9 @@ function refresh-usersh-directory() {
       cp -a "$BASHDIR/sh/user_dir/." "$USERSH/"
     fi
 }
+
+function git-nasty-commit() {
+    git add .
+    git commit -m "Nasty commit by $(whoami) in $(date "+%T [%Y %B %d]") :( "
+    git push
+}
