@@ -1,4 +1,10 @@
 #!/bin/bash
-
-set_prompt "prompt0"
-date "+%T [%Y %B %d]"
+export EDITOR=vim
+date "+%T - %Y %B %d"
+echo ""
+echo " user:     $(whoami)"
+echo " machine:  $(hostname)"
+echo " ip addr:  $(hostname -I)"
+echo ""
+echo ""
+set_prompt "prompt2"
