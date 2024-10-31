@@ -10,7 +10,7 @@ alias ed="$EDITOR"
 alias @bashrc="ed $USERSH/bashrc"
 alias @aliases="ed $USERSH/aliases"
 alias :usersh="cd $USERSH"
-alias :local="$HOME/.local"
+alias :local="cd $HOME/.local"
 
 # activate python virtual environment
 function vn () {
@@ -45,4 +45,11 @@ function git-nasty-commit() {
     git add .
     git commit -m "Nasty commit by $(whoami) in $(date "+%T [%Y %B %d]") :( "
     git push
+}
+
+function bashenv-update() {
+    OLD_PWD="$PWD"
+    cd "$BASHDIR"
+    git pull
+    cd $OLD_PWD
 }
