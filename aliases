@@ -37,7 +37,7 @@ function refresh-usersh-directory() {
     read ANSW
     if [[  $ANSW = "y" ]]; then
       rm -rf "$USERSH"
-      cp -a "$BASHDIR/sh/user_dir/." "$USERSH/"
+      cp -a "$BASHDIR/sh/users_dir/." "$USERSH/"
     fi
 }
 
