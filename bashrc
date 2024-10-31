@@ -17,12 +17,12 @@ if [[ -n $EDITOR ]]; then
   export EDITOR="nano"
 fi
 
-source "$BASHDIR/aliases"
 source "$BASHDIR/functions"
+source "$BASHDIR/aliases"
+
+if [[ -f $USERSH/aliases ]]; then
+  source $USERSH/aliases
+fi
 
 clear
-
-echo "User $(whoami) on $(hostname) at $(date "+%T [%Y %B %d]")"
-echo ""
-
 source "$USERSH/bashrc"

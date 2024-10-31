@@ -1,5 +1,3 @@
 #!/bin/bash
 set_prompt "prompt0"
-if [[ -f $USERSH/aliases ]]; then
-  source $USERSH/aliases
-fi
+echo "User $(whoami) on $(hostname) at $(date "+%T [%Y %B %d]")"
