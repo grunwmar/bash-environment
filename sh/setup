@@ -38,6 +38,6 @@ fi
 ln -s "$BASHDIR/bashrc" "$HOME/.bashrc"
 ln -s "$BASHDIR/login"  "$HOME/.bash_login"
 ln -s "$BASHDIR/logout" "$HOME/.bash_logout"
-ln -s "$USERSH/profile" "$HOME/.bash_profile"
+ln -s "$BASHDIR/profile" "$HOME/.bash_profile"
 
 
