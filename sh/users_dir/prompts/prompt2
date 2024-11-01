@@ -1,4 +1,4 @@
 #!/bin/bash
 PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null); if ! [[ -z ${PS1_CMD1} ]]; then PS1_CMD1="[${PS1_CMD1}]"; fi';
 
-PS1='\[\e[97m\]\w\[\e[92;3m\]${PS1_CMD1}\[\e[0m\]\$ '
+PS1='\w\[\e[92;3m\]${PS1_CMD1}\[\e[0m\]\$ '
